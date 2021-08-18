@@ -42,10 +42,10 @@ function min(arr, toReturn) {
 // https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
 function warnTheSheep(queue) {
-  if (queue[queue.length - 1] === "wolf"){
+  let i = queue.length - 1;
+  if (queue[i] === "wolf"){
     return "Pls go away and stop eating my sheep";
   } 
-  i = queue.length - 1;
   while (queue[i] !== "wolf") {
          i--;
          }
